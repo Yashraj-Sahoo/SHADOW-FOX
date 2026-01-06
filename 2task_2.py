@@ -70,7 +70,7 @@ hangman_stages = [
     """
 ]
 
-print("🎮 Welcome to Hangman!")
+print(" Welcome to Hangman!")
 print("Hint:", hint)
 
 while attempts > 0:
@@ -86,7 +86,7 @@ while attempts > 0:
     print("Word:", display_word.strip())
 
     if "_" not in display_word:
-        print("🎉 Congratulations! You guessed the word.")
+        print(" Congratulations! You guessed the word.")
         break
 
     guess = input("Guess a letter: ").lower()
@@ -99,8 +99,8 @@ while attempts > 0:
 
     if guess not in word:
         attempts -= 1
-        print("❌ Wrong guess!")
+        print(" Wrong guess!")
 
 else:
     print(hangman_stages[-1])
-    print("💀 Game Over! The word was:", word)
+    print(" Game Over! The word was:", word)

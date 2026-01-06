@@ -5,7 +5,7 @@ six_count = 0
 one_count = 0
 two_sixes_in_row = 0
 
-for i in range(20):   # roll the die 20 times
+for i in range(20):   
     roll = random.randint(1, 6)
     rolls.append(roll)
 
@@ -14,7 +14,6 @@ for i in range(20):   # roll the die 20 times
     if roll == 1:
         one_count += 1
 
-# count two 6s in a row
 for i in range(len(rolls) - 1):
     if rolls[i] == 6 and rolls[i + 1] == 6:
         two_sixes_in_row += 1

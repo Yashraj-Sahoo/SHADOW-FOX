@@ -1,6 +1,6 @@
 total_jumps = 0
 
-for i in range(10):   # 10 sets × 10 jumping jacks = 100
+for i in range(10):   
     total_jumps += 10
     print("You have completed", total_jumps, "jumping jacks")
 
